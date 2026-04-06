@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}Flask App{% endblock %}</title>
+  <title>{% block title %}SlushNotes{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <nav class="navbar">
-    <div class="container">
-      <a class="logo" href="{{ url_for('home') }}">FlaskStarter</a>
+    <div class="container nav-inner">
+      <a class="logo" href="{{ url_for('home') }}">SlushNotes</a>
       <div class="nav-links">
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('about') }}">About</a>
-        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('notes') }}">Notes</a>
       </div>
     </div>
   </nav>
@@ -34,7 +34,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>Built with Flask • Basic version</p>
+      <p>SlushNotes - Flask notes app with SQLite CRUD</p>
     </div>
   </footer>
 </body>
