@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1>Welcome to the Basic Flask App</h1>
+  <p class="tagline">
+    This starter project is simple, clean, and functional. It uses Flask routes,
+    templates, shared styling, and a basic form flow.
+  </p>
+
+  <h2>Included features</h2>
+  <ul class="feature-list">
+    {% for feature in features %}
+      <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+
+  <a class="button" href="{{ url_for('contact') }}">Go to Contact</a>
+</section>
+{% endblock %}
